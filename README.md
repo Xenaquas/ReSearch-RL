@@ -57,6 +57,6 @@ Interactive Exploration
 Launch hypothesis_test.ipynb in Jupyter to tweak parameters, re‑generate plots, or inspect raw data.
 
 🤝 Acknowledgments & License
-This work was inspired by—and builds upon—the MIT‑licensed ReSearch project. All original code in this assignment is written from scratch and free for educational use under a Creative Commons Attribution license.
+This work was inspired by ReSearch-RL and builds upon—the MIT‑licensed ReSearch project. All original code in this assignment is written from scratch and free for educational use under a Creative Commons Attribution license.
 
 Thank you for reviewing this exploration of search‑driven reasoning in LLMs. I look forward to your feedback and questions!
