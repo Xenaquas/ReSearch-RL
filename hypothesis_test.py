@@ -35,3 +35,21 @@ plt.title('Distribution of Exact Match Scores')
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+
+# Print statistical results
+print(f"Statistical Results:")
+print(f"- RAG+PPO Mean: {rag_scores.mean():.1f}% ± {rag_scores.std():.1f}%")
+print(f"- ReSearch Mean: {research_scores.mean():.1f}% ± {research_scores.std():.1f}%")
+print(f"\nIndependent t-test (Welch's):")
+print(f"t-statistic = {t_stat:.1f}")
+print(f"p-value = {p_value:.2e}")
+
+# Interpret results
+alpha = 0.05
+print("\nInterpretation:")
+if p_value < alpha:
+    print(f"We reject the null hypothesis (p < {alpha})")
+    print("ReSearch (GRPO) significantly outperforms RAG+PPO")
+else:
+    print(f"We fail to reject the null hypothesis (p ≥ {alpha})")
